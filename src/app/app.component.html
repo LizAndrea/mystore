@@ -1,0 +1,45 @@
+<h1>ngMODEL</h1>
+<p>Nombre {{ person.name }} </p>
+<input type="text" required #nameInput="ngModel" [(ngModel)]=" person.name" />
+<p>Valid: {{ nameInput.valid }} </p>
+<p>Edad {{ person.age }} </p>
+<input type="number" max="18" min="15" required #ageInput="ngModel" [(ngModel)]=" person.age" />
+<p>Valid: {{ ageInput.valid }} </p>
+
+
+<h1>EVENTOS</h1>
+<button [disabled]="btnDisabled">Enviar</button>
+<button (click)=toggleButton()>TOGGLE BUTTON</button>
+
+<p>Edad {{person.age}} </p>
+<button (click)=ageIncrease()>AGE ++</button>
+
+<div class="box" (scroll)="onScroll($event)">
+  <p>
+    estilo apra comoenente eso lo cferemos mas adelante
+  es un archivo app componet con sass  estilo apra comoenente eso lo cferemos mas adelante
+  es un archivo app componet con sass estilo apra comoenente eso lo cferemos mas adelante
+  es un archivo app componet con sass
+  çestilo apra comoenente eso lo cferemos mas adelante
+  es un archivo app componet con sass  estilo apra comoenente eso lo cferemos mas adelante
+  es un archivo app componet con sass estilo apra comoenente eso lo cferemos mas adelante
+  es un archivo app componet con sass
+  </p>
+</div>
+<p>Nombre {{ person.name }} </p>
+<input type="text" [value]=" person.name" (keyup)="changeName($event)"/>
+
+
+
+
+<h1>PROPIEDADES</h1>
+<input type="text" [value]=" person.name "/>
+<progress max="100" [value]="person.age"></progress>
+<img width="100" [src]="person.avatar" alt="imagen"/>
+
+<h1>hola mundo</h1>
+<h2>{{ 'hola liz'.repeat(5) }}</h2>
+
+<h3>hola soy {{ name }} y tengo {{ age }} </h3>
+
+<img src="{{img}}" alt="es una imagen">
