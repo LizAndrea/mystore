@@ -16,6 +16,9 @@ export class AppComponent {
     avatar: 'https://source.unsplash.com/random '
   }
 
+  names: string[] = ['liz', 'henry', 'juan', 'lau'];
+  newName = '';
+
 toggleButton(){
   this.btnDisabled = !this.btnDisabled;
 }
@@ -32,6 +35,9 @@ onScroll(event: Event){
 changeName(event: Event){
   const element = event.target as HTMLInputElement;
   this.person.name = element.value;
+}
+addName(){
+  this.names.push(this.newName);
 }
 
 }
