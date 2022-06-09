@@ -1,6 +1,6 @@
 # myStore
 
-mi tienda en angular 
+mi tienda en Angular 
 
 ## Getting started
 
